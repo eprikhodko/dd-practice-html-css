@@ -1,1 +1,3 @@
-console.log('hello from webpack');
+import './scss/main.scss';
+
+console.log('hello from webpack!');

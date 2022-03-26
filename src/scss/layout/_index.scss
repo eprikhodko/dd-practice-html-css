@@ -1,0 +1,31 @@
+$bgcolor: aquamarine;
+
+html {
+  font-family: georgia;
+}
+
+body {
+  background-color: $bgcolor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+  // background: url('../assets/img/1111.png');
+
+  h1 {
+    font-size: 72px;
+    font-weight: 800;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 54px;
+    color: #545454;
+    font-weight: 400;
+  }
+}
