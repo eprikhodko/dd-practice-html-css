@@ -1,14 +1,8 @@
-$bgcolor: aquamarine;
-$arialFont: Arial, Verdana, sans-serif;
-
 body {
-  background-color: $bgcolor;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-family: $arialFont;
 
   height: 100vh;
   padding: 0;
