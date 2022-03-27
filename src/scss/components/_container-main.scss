@@ -1,0 +1,10 @@
+.container-main {
+  max-width: 1175px;
+  margin: 0 auto;
+  // border: 1px solid magenta;
+
+  @media (min-width: $extra-small) {
+    width: 95%;
+    // background: green;
+  }
+}
