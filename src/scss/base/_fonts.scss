@@ -1,4 +1,15 @@
+// stylelint-disable
 @font-face {
   font-family: Arial;
   src: url('/src/assets/fonts/ArialMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: Arial;
+  src: url('/src/assets/fonts/Arial-ItalicMT.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+// stylelint-enable
