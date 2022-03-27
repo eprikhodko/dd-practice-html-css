@@ -8,17 +8,17 @@ body {
   padding: 0;
 
   h1 {
-    font-size: 72px;
-    font-weight: 800;
-    font-weight: 400;
-    font-style: italic;
     margin: 0;
+    font-weight: 800;
+    font-size: 72px;
+    // font-weight: 400;
+    font-style: italic;
   }
 
   h2 {
-    font-size: 54px;
     color: #545454;
     font-weight: 400;
+    font-size: 54px;
   }
 
   p {
