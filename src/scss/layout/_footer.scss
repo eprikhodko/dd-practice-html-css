@@ -1,5 +1,5 @@
 .footer {
-  padding: $padding-general-extra-small;
+  border-top: 2px solid $smokie;
 
   @media (min-width: $small) {
     padding: 0;
@@ -11,7 +11,6 @@
   justify-content: space-between;
   padding: 1.5em 0;
   list-style: none;
-  border-top: 2px solid $smokie;
 }
 
 .footer-link {

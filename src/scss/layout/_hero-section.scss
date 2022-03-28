@@ -4,7 +4,7 @@
   background-position: center;
   background-size: cover;
 
-  @media (min-width: $small) {
+  @media (min-width: $medium) {
     padding-top: 20em;
     padding-bottom: 5em;
   }
@@ -24,7 +24,7 @@
   background: $white;
   opacity: 60%;
 
-  @media (min-width: $small) {
+  @media (min-width: $medium) {
     max-width: 269px;
     opacity: 100%;
   }
@@ -38,7 +38,7 @@
   font-style: italic;
   background: $dark;
 
-  @media (min-width: $small) {
+  @media (min-width: $medium) {
     max-width: 481px;
     opacity: 100%;
   }

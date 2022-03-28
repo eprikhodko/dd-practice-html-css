@@ -1,5 +1,6 @@
 .card {
   max-width: 375px;
+  margin: 0 auto;
   margin-bottom: 1em;
 
   @media (min-width: $extra-small) {
