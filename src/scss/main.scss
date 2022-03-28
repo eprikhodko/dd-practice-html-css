@@ -6,14 +6,11 @@
 @import 'base/fonts';
 
 @import 'layout/aside';
-@import 'layout/hero-section/hero-section';
-@import 'layout/hero-section/banner-header';
-@import 'layout/hero-section/banner-desc';
+@import 'layout/hero-section';
 @import 'layout/subscribe-section';
-@import 'layout/subscribe-form/subscribe-text';
-@import 'layout/subscribe-form/subscribe-form';
-@import 'layout/subscribe-form/subscribe-input';
-@import 'layout/subscribe-form/subscribe-button';
+@import 'layout/subscribe-form';
+@import 'layout/cards-section';
+@import 'layout/card';
 
 @import 'components/container-main';
 @import 'components/container-flex';

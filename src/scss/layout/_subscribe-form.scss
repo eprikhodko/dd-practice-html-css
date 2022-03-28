@@ -1,0 +1,31 @@
+.subscribe-form {
+  display: flex;
+  //   justify-content: space-between;
+  margin-top: 1.2em;
+}
+
+.subscribe-text {
+  margin: 0;
+  padding-left: 1.15em;
+  font-style: italic;
+  line-height: 1.15;
+}
+
+.subscribe-input {
+  width: 100%;
+  border: 1px solid $smokie;
+
+  &::placeholder {
+    color: $smokie;
+    font-size: 1rem;
+  }
+}
+
+.subscribe-button {
+  margin: 0 2em;
+  padding: 0.5em 1.6em;
+  font-size: 1rem;
+  background: linear-gradient(#f4f3f3, #bbb9b9);
+  border: 1px solid $smokie;
+  cursor: pointer;
+}
