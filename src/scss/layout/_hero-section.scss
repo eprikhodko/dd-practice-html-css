@@ -1,9 +1,16 @@
-.hero-section {
-  margin-top: 2.5em;
-  padding-top: 15em;
+.banner-container {
+  padding-top: 20em;
   background-image: url('../assets/img/banner.jpg');
   background-position: center;
   background-size: cover;
+
+  @media (min-width: $extra-small) {
+    padding-top: 18.7em;
+  }
+}
+
+.hero-section {
+  margin-top: 2.5em;
 }
 
 .banner-header {

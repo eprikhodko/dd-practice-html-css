@@ -1,7 +1,13 @@
 .aside {
   .container-main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+
+    @media (min-width: $extra-small) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 1.5em;
+    }
   }
 }
