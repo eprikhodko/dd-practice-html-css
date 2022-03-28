@@ -1,0 +1,33 @@
+.footer {
+  padding: $general-padding;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0;
+  list-style: none;
+  border-top: 2px solid $smokie;
+}
+
+.footer-link {
+  color: $primary;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.divider {
+  color: $smokie;
+  font-size: 1.2rem;
+}
+
+.footer-copyright {
+  margin: 0;
+  color: $smokie;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.footer-icon path {
+  fill: $smokie;
+}
