@@ -1,11 +1,12 @@
 .banner-container {
-  padding-top: 20em;
+  padding-top: 18.7em;
   background-image: url('../assets/img/banner.jpg');
   background-position: center;
   background-size: cover;
 
-  @media (min-width: $extra-small) {
-    padding-top: 18.7em;
+  @media (min-width: $small) {
+    padding-top: 20em;
+    padding-bottom: 5em;
   }
 }
 
@@ -21,8 +22,12 @@
   font-size: 2.2rem;
   font-style: italic;
   background: $white;
-  //   border: 1px solid black;
   opacity: 60%;
+
+  @media (min-width: $small) {
+    max-width: 269px;
+    opacity: 100%;
+  }
 }
 
 .banner-desc {
@@ -32,4 +37,32 @@
   color: $white;
   font-style: italic;
   background: $dark;
+
+  @media (min-width: $small) {
+    max-width: 481px;
+    opacity: 100%;
+  }
+}
+
+.tabs {
+  display: none;
+  justify-content: space-between;
+
+  @media (min-width: $medium) {
+    display: flex;
+  }
+}
+
+.tab-item {
+  width: 100%;
+  padding: 0.7em 0;
+  color: $primary;
+  background: $light;
+  border: 0;
+  border-right: 1px solid #d6e6e6;
+  cursor: pointer;
+
+  &:last-child {
+    background: $light-active;
+  }
 }
