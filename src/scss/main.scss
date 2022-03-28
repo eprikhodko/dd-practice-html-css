@@ -7,11 +7,17 @@
 
 @import 'layout/aside';
 @import 'layout/hero-section';
+@import 'layout/subscribe-section';
 
 @import 'components/container-main';
+@import 'components/container-flex';
 @import 'components/container';
 @import 'components/nav';
 @import 'components/nav-link';
 @import 'components/nav-list';
 @import 'components/typography/banner-header';
 @import 'components/typography/banner-desc';
+@import 'components/typography/subscribe-text';
+@import 'components/subscribe-form/subscribe-form';
+@import 'components/subscribe-form/subscribe-input';
+@import 'components/subscribe-form/subscribe-button';
