@@ -3,7 +3,7 @@
   margin: 0 auto;
   margin-bottom: 1em;
 
-  @media (min-width: $extra-small) {
+  @media (min-width: $small) {
     max-width: 256px;
   }
 
@@ -24,7 +24,7 @@
   font-size: 2.2rem;
   letter-spacing: -1px;
 
-  @media (min-width: $extra-small) {
+  @media (min-width: $small) {
     font-size: 1.6rem;
   }
 }
@@ -39,7 +39,7 @@
   font-size: 1.8rem;
   line-height: 1.2;
 
-  @media (min-width: $extra-small) {
+  @media (min-width: $small) {
     font-size: 1.4rem;
   }
 }
@@ -50,7 +50,7 @@
   color: $smokie;
   font-size: 1.6rem;
 
-  @media (min-width: $extra-small) {
+  @media (min-width: $small) {
     font-size: 1.4rem;
   }
 }
@@ -59,7 +59,7 @@
   display: inline-block;
   font-size: 1.6rem;
 
-  @media (min-width: $extra-small) {
+  @media (min-width: $small) {
     font-size: 1.4rem;
   }
 }

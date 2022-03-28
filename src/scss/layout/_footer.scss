@@ -1,9 +1,5 @@
 .footer {
   border-top: 2px solid $smokie;
-
-  @media (min-width: $small) {
-    padding: 0;
-  }
 }
 
 .footer-content {

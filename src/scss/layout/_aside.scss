@@ -5,7 +5,7 @@
       flex-direction: column-reverse;
       align-items: center;
 
-      @media (min-width: $extra-small) {
+      @media (min-width: $small) {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 1.5em;
