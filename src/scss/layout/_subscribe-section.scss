@@ -4,4 +4,48 @@
   padding-bottom: 2.3em;
   border-top: 1px dashed $smokie;
   border-bottom: 1px dashed $smokie;
+
+  @media (min-width: $medium) {
+    .container {
+      display: flex;
+    }
+  }
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  margin-top: 1.2em;
+}
+
+.container-flex {
+  display: flex;
+  align-items: flex-start;
+  width: 65%;
+}
+
+.subscribe-text {
+  margin: 0;
+  padding-left: 1.15em;
+  font-style: italic;
+  line-height: 1.15;
+}
+
+.subscribe-input {
+  width: 100%;
+  border: 1px solid $smokie;
+
+  &::placeholder {
+    color: $smokie;
+    font-size: 1rem;
+  }
+}
+
+.subscribe-button {
+  margin: 0 2em;
+  padding: 0.5em 1.6em;
+  font-size: 1rem;
+  background: linear-gradient(#f4f3f3, #bbb9b9);
+  border: 1px solid $smokie;
+  cursor: pointer;
 }
