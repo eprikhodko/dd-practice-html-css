@@ -2,13 +2,14 @@
   .container {
     display: flex;
     flex-direction: column;
+    gap: 1.75em;
     align-items: center;
 
     @media (min-width: $small) {
       flex-direction: row;
-      flex-wrap: wrap;
+      // flex-wrap: wrap;
       align-items: flex-start;
-      justify-content: space-between;
+      // justify-content: space-between;
     }
   }
 }
