@@ -1,5 +1,6 @@
 .container {
   width: 95%;
+  max-width: 1088px;
   // max-width: 710px;
   margin: 0 auto;
   // border: 1px solid green;
@@ -7,6 +8,5 @@
   @media (min-width: $large) {
     width: 100%;
     // max-width: 896px;
-    max-width: 1088px;
   }
 }
