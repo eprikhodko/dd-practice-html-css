@@ -27,7 +27,10 @@
 .wrapper-flex {
   display: flex;
   align-items: flex-start;
-  width: 65%;
+
+  @media (min-width: $medium) {
+    width: 65%;
+  }
 }
 
 .subscribe-text {
