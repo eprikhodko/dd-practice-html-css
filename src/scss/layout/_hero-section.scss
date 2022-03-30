@@ -1,11 +1,15 @@
 .banner-container {
-  padding-top: 18.7em;
-  background-image: url('../assets/img/banner.jpg');
+  padding-top: 20em;
+  background-image: url('../assets/img/banner-2.jpeg');
   background-position: center;
   background-size: cover;
 
+  @media (min-width: $small) {
+    padding-top: 18.7em;
+  }
+
   @media (min-width: $medium) {
-    padding-top: 20em;
+    padding-top: 20.3em;
     padding-bottom: 5em;
   }
 }
