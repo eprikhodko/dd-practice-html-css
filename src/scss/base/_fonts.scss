@@ -12,4 +12,11 @@
   font-weight: normal;
   font-style: italic;
 }
+
+@font-face {
+  font-family: Verdana;
+  src: url('/src/assets/fonts/Verdana.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 // stylelint-enable

@@ -2,7 +2,7 @@
   // border: 1px solid saddlebrown;
 
   @media (min-width: $large) {
-    margin-right: 3em;
+    margin-right: 3.2em;
   }
 
   .container-main {
@@ -30,6 +30,7 @@
 
   @media (min-width: $large) {
     margin: 0;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -78,4 +79,31 @@
     display: block;
     margin-bottom: 0.5em;
   }
+}
+
+// .aside-tweet {
+//   align-self: flex-start;
+// }
+
+.aside-tweet {
+  display: none;
+
+  @media (min-width: $large) {
+    display: block;
+  }
+}
+
+.aside-header {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: $verdana-font;
+  text-transform: uppercase;
+  border-bottom: 1px dashed $smokie;
+}
+
+.aside-tweet-text {
+  max-width: 140px;
+  font-size: 1rem;
+  font-style: italic;
 }

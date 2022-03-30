@@ -1,0 +1,23 @@
+.button-tweet {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 140px;
+  margin-top: 1em;
+  padding: 0.6em;
+  color: $primary;
+  font-size: 1rem;
+  font-style: italic;
+  background: none;
+  border: 1px solid $smokie;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-icon {
+  margin-right: 0.7em;
+
+  path {
+    fill: $primary;
+  }
+}

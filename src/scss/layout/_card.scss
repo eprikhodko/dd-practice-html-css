@@ -33,7 +33,7 @@
 
   @media (min-width: $medium) {
     // max-height: 150px;
-    aspect-ratio: 1.5 / 1;
+    aspect-ratio: 1.42 / 1;
   }
 }
 
@@ -55,6 +55,7 @@
   @media (min-width: $small) {
     margin-top: 0.65em;
     font-size: 1.6rem;
+    letter-spacing: 0;
   }
 }
 
