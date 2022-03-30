@@ -58,6 +58,10 @@
   @media (min-width: $medium) {
     display: flex;
   }
+
+  // @media (min-width: $extra-large) {
+  //   padd;
+  // }
 }
 
 .tab-item {
@@ -71,5 +75,23 @@
 
   &:last-child {
     background: $light-active;
+  }
+
+  @media (min-width: $extra-large) {
+    padding: 1.4em 0;
+    padding-left: 1.1em;
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .tab-item-text {
+    display: none;
+
+    @media (min-width: $extra-large) {
+      display: block;
+      margin-top: 0.25em;
+      font-size: 10px;
+      font-style: italic;
+    }
   }
 }
