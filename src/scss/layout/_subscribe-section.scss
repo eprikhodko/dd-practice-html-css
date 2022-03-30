@@ -1,13 +1,16 @@
 .subscribe-section {
   margin: 2em 0;
   padding-top: 0.7em;
-  padding-bottom: 2.3em;
+  padding-bottom: 0.7em;
   border-top: 1px dashed $smokie;
   border-bottom: 1px dashed $smokie;
 
   @media (min-width: $medium) {
     .container {
       display: flex;
+      align-items: center;
+      // justify-content: space-between;
+      width: 95%;
     }
   }
 }
@@ -15,13 +18,16 @@
 .subscribe-form {
   display: flex;
   align-items: center;
-  margin-top: 1.2em;
+  // margin-left: 1em;
+  // margin-top: 1.2em;
+  // justify-self: flex-end;
 }
 
 .wrapper-flex {
   display: flex;
   align-items: flex-start;
   width: 65%;
+  // margin-right: 1em;
 }
 
 .subscribe-text {
@@ -39,10 +45,16 @@
     color: $smokie;
     font-size: 1rem;
   }
+
+  @media (min-width: $medium) {
+    width: 60%;
+    margin-left: auto;
+  }
 }
 
 .subscribe-button {
   margin: 0 2em;
+  margin-right: 0;
   padding: 0.5em 1.6em;
   font-size: 1rem;
   background: linear-gradient(#f4f3f3, #bbb9b9);

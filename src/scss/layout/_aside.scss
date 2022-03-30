@@ -27,6 +27,10 @@
 
 .nav {
   margin: 2em 0;
+
+  @media (min-width: $large) {
+    margin: 0;
+  }
 }
 
 .nav-list {
@@ -60,6 +64,10 @@
   @media (min-width: $large) {
     flex-direction: row;
     margin-top: 2em;
+
+    &:first-child {
+      margin-top: 1em;
+    }
   }
 }
 
