@@ -2,4 +2,8 @@
   max-width: 710px;
   margin: 0 auto;
   // border: 1px solid magenta;
+
+  @media (min-width: $extra-large) {
+    max-width: 896px;
+  }
 }
