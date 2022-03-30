@@ -16,6 +16,10 @@
 
 .hero-section {
   margin-top: 2.5em;
+
+  @media (min-width: $large) {
+    margin-top: 0;
+  }
 }
 
 .banner-header {

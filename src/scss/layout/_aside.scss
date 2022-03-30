@@ -1,4 +1,10 @@
 .aside {
+  // border: 1px solid saddlebrown;
+
+  @media (min-width: $large) {
+    margin-right: 3em;
+  }
+
   .container-main {
     .container {
       display: flex;
@@ -9,6 +15,11 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 1.5em;
+      }
+
+      @media (min-width: $large) {
+        flex-direction: column;
+        margin-top: 0;
       }
     }
   }
@@ -24,6 +35,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $large) {
+    flex-direction: column;
+  }
 }
 
 .nav-link {
@@ -32,15 +47,20 @@
   font-style: italic;
   text-decoration: none;
 
-  @media (min-width: $medium) {
-    margin: 0 1.5em;
-  }
+  // @media (min-width: $large) {
+  //   margin: 0 1.2em;
+  // }
 }
 
 .nav-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $large) {
+    flex-direction: row;
+    margin-top: 2em;
+  }
 }
 
 .nav-icon {
