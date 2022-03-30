@@ -2,14 +2,17 @@
   .container {
     display: flex;
     flex-direction: column;
+    gap: 1.75em;
     align-items: center;
 
     @media (min-width: $small) {
       flex-direction: row;
       flex-wrap: wrap;
-      // gap: 1.75em;
-      gap: 2.4em;
       align-items: flex-start;
+    }
+
+    @media (min-width: $large) {
+      gap: 2.4em;
     }
   }
 }

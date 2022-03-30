@@ -1,12 +1,9 @@
-.footer {
-  border-top: 2px solid $smokie;
-}
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   padding: 1.5em 0;
   list-style: none;
+  border-top: 2px solid $smokie;
 }
 
 .footer-link {
