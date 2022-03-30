@@ -7,7 +7,8 @@
     @media (min-width: $small) {
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 1.75em;
+      // gap: 1.75em;
+      gap: 2.4em;
       align-items: flex-start;
     }
   }

@@ -17,6 +17,11 @@
 .subscribe-form {
   display: flex;
   align-items: center;
+  margin-top: 1em;
+
+  @media (min-width: $medium) {
+    margin-top: 0;
+  }
 }
 
 .wrapper-flex {

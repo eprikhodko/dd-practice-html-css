@@ -49,6 +49,10 @@
   color: $primary;
   font-style: italic;
   text-decoration: none;
+
+  @media (min-width: $medium) {
+    margin: 0 1.5em;
+  }
 }
 
 .nav-item {
