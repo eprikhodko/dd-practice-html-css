@@ -1,6 +1,4 @@
 .aside {
-  // border: 1px solid saddlebrown;
-
   @media (min-width: $large) {
     margin-right: 3.2em;
   }
@@ -51,10 +49,6 @@
   color: $primary;
   font-style: italic;
   text-decoration: none;
-
-  // @media (min-width: $large) {
-  //   margin: 0 1.2em;
-  // }
 }
 
 .nav-item {
@@ -80,10 +74,6 @@
     margin-bottom: 0.5em;
   }
 }
-
-// .aside-tweet {
-//   align-self: flex-start;
-// }
 
 .aside-tweet {
   display: none;

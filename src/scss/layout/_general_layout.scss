@@ -3,7 +3,6 @@
   flex-direction: column;
   max-width: 896px;
   margin: 0 auto;
-  // border: 1px solid salmon;
 
   @media (min-width: $large) {
     max-width: 1080px;
@@ -11,11 +10,6 @@
 }
 
 .container-flex {
-  // justify-content: space-between;
-  //   background: green;
-  // width: 100%;
-  // border: 1px solid;
-
   @media (min-width: $large) {
     display: flex;
     margin: 0 auto;
