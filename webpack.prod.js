@@ -39,9 +39,4 @@ module.exports = merge(common, {
       },
     ],
   },
-
-  // disable minimization of js scripts
-  optimization: {
-    minimize: false,
-  },
 });

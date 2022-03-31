@@ -7,8 +7,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: true,
       template: './src/index.html',
-      // disable minimization of html files
-      minify: false,
     }),
   ],
 
@@ -22,10 +20,6 @@ module.exports = {
       {
         test: /\.html$/i,
         loader: 'html-loader',
-        // disable minimization of html files
-        options: {
-          minimize: false,
-        },
       },
 
       {
