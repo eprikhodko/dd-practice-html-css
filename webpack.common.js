@@ -23,13 +23,23 @@ module.exports = {
       },
 
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
         // https://webpack.js.org/guides/asset-modules/#custom-output-filename
         generator: {
           filename: 'assets/img/[hash][ext][query]',
         },
       },
+
+      {
+        test: /\.(svg)$/i,
+        type: 'asset/resource',
+        // https://webpack.js.org/guides/asset-modules/#custom-output-filename
+        generator: {
+          filename: 'assets/svg/[hash][ext][query]',
+        },
+      },
+
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
