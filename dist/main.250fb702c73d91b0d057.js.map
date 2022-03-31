@@ -1,0 +1,1 @@
+{"version":3,"file":"main.250fb702c73d91b0d057.js","mappings":"mBAEAA,QAAQC,IAAI,wB","sources":["webpack://dd-practice-html-css/./src/index.js"],"sourcesContent":["import './scss/main.scss';\n\nconsole.log('hello from webpack!');\n"],"names":["console","log"],"sourceRoot":""}
