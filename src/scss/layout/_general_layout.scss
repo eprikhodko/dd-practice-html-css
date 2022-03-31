@@ -1,25 +1,16 @@
 .body {
   display: flex;
   flex-direction: column;
-  // max-width: 896px;
   margin: 0 auto;
-  // border: 1px solid salmon;
-
-  // @media (min-width: $medium) {
-  //   max-width: 896px;
-  // }
 
   @media (min-width: $large) {
-    // max-width: 1080px;
     width: 95%;
   }
 }
 
 .container-flex {
-  // border: 1px solid maroon;
   @media (min-width: $large) {
     display: flex;
-    // max-width: 896px;
     margin: 0 auto;
     margin-top: 3.5em;
   }
