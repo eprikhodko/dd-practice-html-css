@@ -2,37 +2,70 @@ import './scss/main.scss';
 
 console.log('hello from webpack!');
 
+const slider = document.querySelector('.slider__content');
 const slides = document.querySelectorAll('.slider__slide');
-const btns = document.querySelectorAll('.slider__tab-item');
+const sliderTabs = document.querySelectorAll('.slider__tab-item');
+const prevButton = document.querySelector('.slider__button-prev');
+const nextButton = document.querySelector('.slider__button-next');
 
-let currentSlide = 1;
+let slideNumber = 3;
 
-const manualNav = (manual) => {
+const manualNav = (index) => {
   slides.forEach((slide) => {
     slide.classList.remove('slider__slide_active');
   });
 
-  btns.forEach((btn) => {
+  sliderTabs.forEach((btn) => {
     btn.classList.remove('slider__tab-item_active');
   });
 
-  slides[manual].classList.add('slider__slide_active');
-  btns[manual].classList.add('slider__tab-item_active');
+  slides[index].classList.add('slider__slide_active');
+  sliderTabs[index].classList.add('slider__tab-item_active');
 };
 
-btns.forEach((btn, i) => {
-  btn.addEventListener('click', () => {
+sliderTabs.forEach((tab, i) => {
+  tab.addEventListener('click', () => {
     manualNav(i);
-    currentSlide = i;
   });
+});
+
+nextButton.addEventListener('click', () => {
+  slides.forEach((slide) => {
+    slide.classList.remove('slider__slide_active');
+  });
+
+  slideNumber++;
+
+  if (slideNumber > slides.length - 1) {
+    slideNumber = 0;
+  }
+
+  slides[slideNumber].classList.add('slider__slide_active');
+});
+
+prevButton.addEventListener('click', () => {
+  slides.forEach((slide) => {
+    slide.classList.remove('slider__slide_active');
+  });
+
+  slideNumber--;
+
+  if (slideNumber < 0) {
+    slideNumber = slides.length - 1;
+  }
+
+  slides[slideNumber].classList.add('slider__slide_active');
 });
 
 const activeSlide = document.getElementsByClassName('slider__slide_active');
 const activeTab = document.getElementsByClassName('slider__tab-item_active');
-let i = 0;
+
+let play;
 
 const repeater = () => {
-  setInterval(() => {
+  let i = 0;
+
+  play = setInterval(() => {
     [...activeSlide].forEach((activeSlide) => {
       activeSlide.classList.remove('slider__slide_active');
     });
@@ -41,7 +74,7 @@ const repeater = () => {
     });
 
     slides[i].classList.add('slider__slide_active');
-    btns[i].classList.add('slider__tab-item_active');
+    sliderTabs[i].classList.add('slider__tab-item_active');
     i++;
 
     if (slides.length === i) {
@@ -51,6 +84,14 @@ const repeater = () => {
     if (i >= slides.length) {
       return;
     }
-  }, 3000);
+  }, 1000);
 };
-// repeater();
+repeater();
+
+slider.addEventListener('mouseover', () => {
+  clearInterval(play);
+});
+
+slider.addEventListener('mouseout', () => {
+  repeater();
+});
