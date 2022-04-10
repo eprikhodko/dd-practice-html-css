@@ -5,27 +5,27 @@
     margin-top: 0;
   }
 
-  // &__content {
-  //   padding-top: 20em;
-  //   background-image: url('../assets/img/banner-2.jpeg');
-  //   background-position: center;
-  //   background-size: cover;
+  &__content {
+    position: relative;
+    width: 770px;
+    height: 500px;
+    margin: 10px;
+  }
 
-  //   @media (min-width: $small) {
-  //     padding-top: 18.7em;
-  //   }
-
-  //   @media (min-width: $medium) {
-  //     padding-top: 20.3em;
-  //     padding-bottom: 5em;
-  //   }
-  // }
+  &__slide {
+    position: absolute;
+    // z-index: 1;
+    width: 100%;
+  }
 
   &__image {
+    // z-index: 1;
     max-width: 100%;
   }
 
   &__header {
+    position: absolute;
+    top: 30px;
     margin: 0;
     padding: 0.3em 0;
     padding-left: $padding-left-banner-header;
