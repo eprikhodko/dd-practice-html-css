@@ -53,4 +53,4 @@ const repeater = () => {
     }
   }, 3000);
 };
-repeater();
+// repeater();

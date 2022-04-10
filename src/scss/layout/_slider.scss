@@ -7,30 +7,51 @@
 
   &__content {
     position: relative;
-    width: 770px;
-    height: 500px;
-    margin: 10px;
+    width: 100%;
+    overflow: hidden;
+    // width: 770px;
+    // max-width: 896px;
+    // height: 500px;
+    // margin: 10px;
   }
 
   &__slide {
-    position: absolute;
+    display: none;
+    // position: absolute;
     // z-index: 1;
-    width: 100%;
-    clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+    // max-width: 100%;
+    // clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
   }
 
   &__slide_active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   &__image {
+    // position: relative;
+    // left: 50%;
+    // transform: translate(-50%, 0);
+
     // z-index: 1;
     max-width: 100%;
+    // object-fit: cover;
+    // object-position: center;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 70px;
+
+    @media (max-width: $medium) {
+      bottom: 0;
+      width: 100%;
+    }
   }
 
   &__header {
-    position: absolute;
-    top: 30px;
+    // position: absolute;
+    // top: 400px;
     margin: 0;
     padding: 0.3em 0;
     padding-left: $padding-left-banner-header;
