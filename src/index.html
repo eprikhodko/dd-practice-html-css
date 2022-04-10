@@ -121,32 +121,92 @@
       </aside>
 
       <main class="main">
-        <section class="hero-section">
-          <div class="banner-container">
-            <h2 class="banner-header">Share your Food Sence</h2>
-            <p class="banner-desc">
-              Submit yout favorite recipes, become a contributor, or get
-              interviewed.
-            </p>
+        <section class="slider">
+          <div class="slider__content">
+            <div class="slider__buttons">
+              <button class="slider__button-prev" type="button">
+                <img
+                  class="slider__icon-chevron"
+                  src="./assets/svg/chevron.svg"
+                  alt="chevron"
+                />
+              </button>
+
+              <button class="slider__button-next" type="button">
+                <img
+                  class="slider__icon-chevron"
+                  src="./assets/svg/chevron.svg"
+                  alt="chevron"
+                />
+              </button>
+            </div>
+            <div class="slider__slide">
+              <img
+                class="slider__image"
+                src="./assets/img/slide-1.jpeg"
+                alt="scientist looking into microscope"
+              />
+            </div>
+
+            <div class="slider__slide">
+              <img
+                class="slider__image"
+                src="./assets/img/slide-2.1.jpg"
+                alt="fruits on bun"
+              />
+            </div>
+
+            <div class="slider__slide">
+              <img
+                class="slider__image"
+                src="./assets/img/slide-3.1.jpg"
+                alt="vegetables on a table"
+              />
+            </div>
+
+            <div class="slider__slide slider__slide_active">
+              <img
+                class="slider__image"
+                src="./assets/img/slide-4.1.jpg"
+                alt="pan with food"
+              />
+            </div>
+
+            <div class="slider__text">
+              <h2 class="slider__header">Share your Food Sence</h2>
+              <p class="slider__desc">
+                Submit yout favorite recipes, become a contributor, or get
+                interviewed.
+              </p>
+            </div>
           </div>
-          <div class="tabs">
-            <button class="tab-item" type="button">
+          <div class="slider__tabs">
+            <button class="slider__tab-item" type="button">
               Tastemakers
-              <span class="tab-item-text">Feast your eyes & get reciepes!</span>
+              <span class="slider__tab-item-text"
+                >Feast your eyes & get reciepes!</span
+              >
             </button>
-            <button class="tab-item" type="button">
+            <button class="slider__tab-item" type="button">
               Blog
-              <span class="tab-item-text"
+              <span class="slider__tab-item-text"
                 >News, how-tos, stories, and more</span
               >
             </button>
-            <button class="tab-item" type="button">
+            <button class="slider__tab-item" type="button">
               The A-List
-              <span class="tab-item-text">Handpicked, absolute favorites</span>
+              <span class="slider__tab-item-text"
+                >Handpicked, absolute favorites</span
+              >
             </button>
-            <button class="tab-item" type="button">
+            <button
+              class="slider__tab-item slider__tab-item_active"
+              type="button"
+            >
               Contribute
-              <span class="tab-item-text">We want to hear from you!</span>
+              <span class="slider__tab-item-text"
+                >We want to hear from you!</span
+              >
             </button>
           </div>
         </section>

@@ -1,0 +1,140 @@
+.slider {
+  margin-top: 2.5em;
+
+  @media (min-width: $large) {
+    margin-top: 0;
+  }
+
+  &__content {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__buttons {
+    @media (min-width: $medium) {
+      display: none;
+    }
+  }
+
+  @mixin button-chevron() {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    padding: 0;
+    background: transparent;
+    border: none;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  &__button-prev {
+    @include button-chevron;
+
+    transform: rotate(-90deg);
+  }
+
+  &__button-next {
+    @include button-chevron;
+    right: 0;
+    transform: rotate(90deg);
+  }
+
+  &__icon-chevron {
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+  }
+
+  &__slide {
+    display: none;
+  }
+
+  &__slide_active {
+    display: flex;
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 70px;
+
+    @media (max-width: $medium) {
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &__header {
+    margin: 0;
+    padding: 0.3em 0;
+    padding-left: $padding-left-banner-header;
+    font-weight: 400;
+    font-size: 2.2rem;
+    font-style: italic;
+    background: $white;
+    opacity: 60%;
+
+    @media (min-width: $medium) {
+      max-width: 269px;
+      opacity: 100%;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    padding: 0.7em 0;
+    padding-left: $padding-left-banner-header;
+    color: $white;
+    font-style: italic;
+    background: $dark;
+
+    @media (min-width: $medium) {
+      max-width: 481px;
+      opacity: 100%;
+    }
+  }
+
+  &__tabs {
+    display: none;
+
+    @media (min-width: $medium) {
+      display: flex;
+    }
+  }
+
+  &__tab-item {
+    width: 100%;
+    padding: 0.7em 0;
+    color: $primary;
+    background: $light;
+    border: 0;
+    border-right: 1px solid #d6e6e6;
+    cursor: pointer;
+
+    @media (min-width: $extra-large) {
+      padding: 1.4em 0;
+      padding-left: 1.1em;
+      font-size: 1.8rem;
+      text-align: left;
+    }
+  }
+
+  &__tab-item_active {
+    background: $light-active;
+  }
+
+  &__tab-item-text {
+    display: none;
+
+    @media (min-width: $extra-large) {
+      display: block;
+      margin-top: 0.25em;
+      font-size: 10px;
+      font-style: italic;
+    }
+  }
+}
