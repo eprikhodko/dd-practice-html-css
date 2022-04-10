@@ -61,10 +61,10 @@
   &__text {
     position: absolute;
     bottom: 70px;
+    width: 100%;
 
     @media (max-width: $medium) {
       bottom: 0;
-      width: 100%;
     }
   }
 
