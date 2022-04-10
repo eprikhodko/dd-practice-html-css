@@ -16,6 +16,11 @@
     position: absolute;
     // z-index: 1;
     width: 100%;
+    clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
+  }
+
+  &__slide_active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   &__image {
@@ -72,16 +77,16 @@
     border-right: 1px solid #d6e6e6;
     cursor: pointer;
 
-    &:last-child {
-      background: $light-active;
-    }
-
     @media (min-width: $extra-large) {
       padding: 1.4em 0;
       padding-left: 1.1em;
       font-size: 1.8rem;
       text-align: left;
     }
+  }
+
+  &__tab-item_active {
+    background: $light-active;
   }
 
   &__tab-item-text {

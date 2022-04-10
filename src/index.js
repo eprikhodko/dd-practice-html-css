@@ -8,8 +8,16 @@ const btns = document.querySelectorAll('.slider__tab-item');
 let currentSlide = 1;
 
 const manualNav = (manual) => {
-  slides[manual].classList.add('active');
-  btns[manual].classList.add('active');
+  slides.forEach((slide) => {
+    slide.classList.remove('slider__slide_active');
+  });
+
+  btns.forEach((btn) => {
+    btn.classList.remove('slider__tab-item_active');
+  });
+
+  slides[manual].classList.add('slider__slide_active');
+  btns[manual].classList.add('slider__tab-item_active');
 };
 
 btns.forEach((btn, i) => {
