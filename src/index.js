@@ -26,3 +26,36 @@ btns.forEach((btn, i) => {
     currentSlide = i;
   });
 });
+
+const repeat = (activeClass) => {
+  const activeSlide = document.getElementsByClassName('slider__slide_active');
+  const activeTab = document.getElementsByClassName('slider__tab-item_active');
+  let i = 1;
+
+  const repeater = () => {
+    setTimeout(() => {
+      [...activeSlide].forEach((activeSlide) => {
+        activeSlide.classList.remove('slider__slide_active');
+      });
+      [...activeTab].forEach((activeTab) => {
+        activeTab.classList.remove('slider__tab-item_active');
+      });
+
+      slides[i].classList.add('slider__slide_active');
+      btns[i].classList.add('slider__tab-item_active');
+      i++;
+
+      if (slides.length === i) {
+        i = 0;
+      }
+
+      if (i >= slides.length) {
+        return;
+      }
+
+      repeater();
+    }, 3000);
+  };
+  repeater();
+};
+repeat();
