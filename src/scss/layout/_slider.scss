@@ -9,34 +9,53 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    // width: 770px;
-    // max-width: 896px;
-    // height: 500px;
-    // margin: 10px;
+  }
+
+  &__buttons {
+    @media (min-width: $medium) {
+      display: none;
+    }
+  }
+
+  @mixin button-chevron() {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    padding: 0;
+    background: transparent;
+    border: none;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  &__button-prev {
+    @include button-chevron;
+
+    transform: rotate(-90deg);
+  }
+
+  &__button-next {
+    @include button-chevron;
+    right: 0;
+    transform: rotate(90deg);
+  }
+
+  &__icon-chevron {
+    width: 90px;
+    height: 90px;
+    padding: 15px;
   }
 
   &__slide {
     display: none;
-    // position: absolute;
-    // z-index: 1;
-    // max-width: 100%;
-    // clip-path: polygon(0 0, 0% 0, 0% 100%, 0% 100%);
   }
 
   &__slide_active {
     display: flex;
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   &__image {
-    // position: relative;
-    // left: 50%;
-    // transform: translate(-50%, 0);
-
-    // z-index: 1;
     max-width: 100%;
-    // object-fit: cover;
-    // object-position: center;
   }
 
   &__text {
@@ -50,8 +69,6 @@
   }
 
   &__header {
-    // position: absolute;
-    // top: 400px;
     margin: 0;
     padding: 0.3em 0;
     padding-left: $padding-left-banner-header;
